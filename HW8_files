@@ -1,0 +1,11 @@
+#Дополнить справочник возможностью копирования данных из одного файла в другой. Пользователь вводит номер строки, которую необходимо перенести из одного файла в другой.
+
+source_file = open('source.​txt', 'r')
+destination_file = open('destination.​txt', 'a')
+line_number = int(input(″Введите номер строки для копирования⁚ ″))
+for i, line in enumerate(source_file)⁚
+    if i  line_number ― 1⁚
+        break
+destination_file.​write(line)
+source_file.close
+destination_file.​close
